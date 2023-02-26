@@ -1,0 +1,176 @@
+body {
+    background-color: #10141b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0% 10%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px 30px 0px;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+font-size: 1.2em;
+font-weight: 600;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff200;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.back {
+    padding: 2px;
+    font-weight: 100;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.back-container {
+    margin-bottom: 10px;
+}
+
+.error {
+    padding: 20px;
+    border-radius: 10px;
+    color: fff;
+    background:hsla(0, 100%, 61%, 0.507)
+}
+
+/* Loader */
+
+.loader {
+    width: 40px;
+    height: 40px;
+    background-color: #fff200;
+    animation-name: rotatingSquare;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotatingSquare{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+
+    60%{
+        border-radius: 50%;
+        transform: rotate(120deg);
+    }
+}
+
+/* Index and details*/
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data-results,
+.result-detail {
+    background-color: #fff;
+    color: #10141b;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+.data-results {
+    width: 220px;
+    margin: 20px 20px 0px 0px;
+}
+
+.result-detail h1 {
+    color: #383838;
+}
+
+.data-results a {
+    color: #8e3d07;
+    text-transform: uppercase;
+}
+
+/* Form */
+
+button {
+    background: #383838;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form {
+    padding: 5%;
+    background: #fff;
+    border-radius: 20px;
+}
+
+form h1 {
+    color:#10141b
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+.form-error {
+    color: #ff0000;
+    margin-top: 2px;
+    font-size: 0.8em;
+    display: none;
+}
+
+.input-container {
+    margin-top: 18px;
+}
+
+label {
+    color: #10141b;
+    font-size: 1em;
+}
