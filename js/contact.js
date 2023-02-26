@@ -14,14 +14,14 @@ const goBack = document.querySelector(".back");
 
 goBack.onclick = () => {
     history.back();
-  };
+};
 
 loader.style.display = "block";
 form.style.display = "none";
-  setTimeout(() => {
-    form.style.display = "block";
-    loader.style.display = "none";
-  }, 1500);
+    setTimeout(() => {
+        form.style.display = "block";
+        loader.style.display = "none";
+    }, 1500);
 
 function formValidation(event) {
     event.preventDefault();

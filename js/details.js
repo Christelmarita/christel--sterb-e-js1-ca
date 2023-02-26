@@ -9,7 +9,7 @@ const corsEnabledUrl = "https://noroffcors.onrender.com/" + url;
 
 goBack.onclick = () => {
     history.back();
-  };
+};
 
 async function getCharacter() {
     try {
